@@ -12,7 +12,7 @@ job('NodeJS Docker example') {
         dockerBuildAndPublish {
             repositoryName('sherca/docker-nodejs-demo')
             tag('${GIT_REVISION,length=9}')
-            registryCredentials('dockerhub')
+            registryCredentials('sherca')
             forcePull(false)
             forceTag(false)
             createFingerprints(false)
